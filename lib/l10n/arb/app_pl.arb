@@ -1,0 +1,27 @@
+{
+  "@@locale": "pl",
+  "something_went_wrong": "Coś poszło nie tak",
+  "search_bar_placeholder":"CZEGO SZUKASZ",
+  "currency_pln":"zł",  
+  "baseball_category":"Bejsbol",
+  "soccer_category":"Piłka nożna",
+  "basketball_category":"Koszykówka",
+  "ice_hockey_category":"Hokej",
+  "tennis_category":"Tenis",
+  "live_event_category":"Wydarzenie na żywo",
+  "special_event_category":"Wydarzenie specjalne",
+  "floorball_category":"Unihokej",
+  "handball_category":"Piłka ręczna",
+  "golf_category":"Golf",
+  "volleyball_category":"Siatkówka",
+  "all_category":"Wszystko",
+  "try_again":"Spróbuj ponownie",
+  "hot":"HOT",
+  "recommended":"POLECANE:",
+  "show_all":"POKAŻ WSZYSTKIE",
+  "searching_info_message_title": "DAJ NAM CHWILĘ",
+  "searching_info_message_subtitle": "PRZESZUKUJEMY BAZĘ DANYCH",  "searching_empty_result_message_title": "BRAK WYNIKÓW",
+  "searching_empty_result_message_subtitle": "SPRÓBUJ INNEGO ZAPYTANIA"
+  
+}
+
