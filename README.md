@@ -8,7 +8,7 @@ Flutter project for interview purposes .
 ✅ - Integration tests (Patrol) + Cubit tests\
 ✅ - Internationalizing l10n (events endpoint works fine, quick-search endpoint throw 500)\
 ✅ - Go router simple routing \
-✅ - Rest API integration (Dio, Retrofit)
+✅ - Rest API integration (Dio, Retrofit)\
 ✅ - Global colors and fonts
 
 
