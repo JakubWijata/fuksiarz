@@ -17,11 +17,12 @@ class EventsRepository implements IEventsRepository {
   );
 
   @override
-  Future<Either<Failure, List<Event>>> getEvents(
-      List<CategoryType> categories) async {
+  Future<Either<Failure, List<Event>>> getEvents({
+    required List<CategoryType> categories,
+  }) async {
     try {
       final result = await _dataSource.getEvents(
-        categories.map((e) => e.id).toList(),
+        categoriesId: categories.map((e) => e.id).toList(),
       );
 
       return result.fold(
@@ -36,12 +37,15 @@ class EventsRepository implements IEventsRepository {
   }
 
   @override
-  Future<Either<Failure, List<Event>>> searchEvents(
-    String query,
-    String languageCode,
-  ) async {
+  Future<Either<Failure, List<Event>>> searchEvents({
+    required String query,
+    required String languageCode,
+  }) async {
     try {
-      final result = await _dataSource.search(query, languageCode);
+      final result = await _dataSource.search(
+        query: query,
+        languageCode: languageCode,
+      );
 
       return result.fold(
         left,

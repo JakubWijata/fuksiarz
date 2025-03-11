@@ -18,7 +18,10 @@ class EventsCubit extends Cubit<EventsState> {
 
   Future<void> loadData() async {
     emit(state.copyWith(isLoading: true));
-    final result = await _eventsRepository.getEvents(CategoryType.values);
+    final result = await _eventsRepository.getEvents(
+      categories: CategoryType.values,
+    );
+
     result.fold(
       (f) {
         emit(
