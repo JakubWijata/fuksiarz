@@ -9,9 +9,12 @@ Flutter project for interview purposes .
 ✅ - Internationalizing l10n (events endpoint works fine, quick-search endpoint throw 500)\
 ✅ - Go router simple routing \
 ✅ - Rest API integration (Dio, Retrofit)
+✅ - Global colors and fonts
+
 
 ## Additional
 - Due to the size of the project, I opted for a simple architecture following the data, domain, and presentation layers. This approach keeps the codebase clean and maintainable without adding unnecessary complexity.
+- The color and font library is not defined in figma.  So I defined them in the application in a simple way but I recommend to define them in figma according to material design and map them in flutter 
 
 ## Issues
 
