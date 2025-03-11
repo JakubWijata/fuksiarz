@@ -23,6 +23,7 @@ abstract class ApiClient {
   Future<ResponseDTO> getEvents(
     @Path('ids') String ids,
   );
+
   @POST("/search/events/quick-search")
   Future<ResponseDTO> search(
     @Body() Map<String, dynamic> body,
