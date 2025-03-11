@@ -4,9 +4,7 @@ import 'package:intl/intl.dart';
 class LanguageInterceptor extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    String locale = Intl.getCurrentLocale();
-
-    options.headers['Request-Language'] = locale;
+    options.headers['Request-Language'] = Intl.getCurrentLocale();
 
     handler.next(options);
   }
