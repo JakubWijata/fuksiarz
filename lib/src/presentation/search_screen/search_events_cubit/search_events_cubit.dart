@@ -36,8 +36,8 @@ class SearchEventsCubit extends Cubit<SearchEventsState> {
     );
 
     final result = await _eventsRepository.searchEvents(
-      query,
-      languageCode,
+      languageCode: languageCode,
+      query: query,
     );
 
     result.fold(
@@ -61,10 +61,10 @@ class SearchEventsCubit extends Cubit<SearchEventsState> {
     );
   }
 
-  void searchEvents(
-    String query,
-    String languageCode,
-  ) {
+  void searchEvents({
+    required String query,
+    required String languageCode,
+  }) {
     if (query.length <= 3) {
       emit(
         state.copyWith(

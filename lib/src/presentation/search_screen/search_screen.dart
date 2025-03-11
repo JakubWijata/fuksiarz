@@ -50,11 +50,7 @@ class SearchScreenScaffold extends StatelessWidget {
                 children: [
                   SearchBar(
                     enabled: true,
-                    onChange: (value) =>
-                        context.read<SearchEventsCubit>().searchEvents(
-                              value,
-                              Localizations.localeOf(context).languageCode,
-                            ),
+                    onChange: (value) => _onTextChanged(context, value),
                   ),
                   SizedBox(height: 16),
                   Flexible(
@@ -109,6 +105,13 @@ class SearchScreenScaffold extends StatelessWidget {
         );
       },
     );
+  }
+
+  void _onTextChanged(BuildContext context, String text) {
+    context.read<SearchEventsCubit>().searchEvents(
+          query: text,
+          languageCode: Localizations.localeOf(context).languageCode,
+        );
   }
 }
 
